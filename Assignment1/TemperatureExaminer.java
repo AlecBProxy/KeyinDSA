@@ -1,3 +1,5 @@
+package Assignment1;
+// "Average Temperature Calculator"
 // Assignment #1
 // Data Structures and Algorithms 
 // Semester #4
