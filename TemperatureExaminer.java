@@ -1,3 +1,7 @@
+// Assignment #1
+// Data Structures and Algorithms 
+// Semester #4
+
 import java.util.Scanner; 
 
 public class TemperatureExaminer {
