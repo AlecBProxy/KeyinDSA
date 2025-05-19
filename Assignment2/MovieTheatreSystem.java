@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class MovieTheatreSystem {
     
-    private static final int ROWS = 5;
-    private static final int COLS = 8;
+    private static final int ROWS = 6;
+    private static final int COLS = 9;
     private static boolean[][] seats = new boolean[ROWS][COLS];
     private static Scanner scanner = new Scanner(System.in);
     
@@ -57,8 +57,8 @@ public class MovieTheatreSystem {
     private static void showSeatingChart() {
         System.out.println("\n===== Seating Chart =====");
         System.out.println("\n=========================");
-        System.out.println("    1 2 3 4 5 6 7 8");
-        System.out.println("   ----------------");
+        System.out.println("    1 2 3 4 5 6 7 8 9");
+        System.out.println("   -------------------");
         
         for (int i = 0; i < ROWS; i++) {
             System.out.print((char)('A' + i) + " | ");
@@ -85,7 +85,7 @@ public class MovieTheatreSystem {
         char rowChar = scanner.next().toUpperCase().charAt(0);
         int row = rowChar - 'A';
         
-        System.out.print("Enter column (1-8): ");
+        System.out.print("Enter column (1-9): ");
         int col = scanner.nextInt() - 1;
         
         if (row < 0 || row >= ROWS || col < 0 || col >= COLS) {
@@ -94,11 +94,11 @@ public class MovieTheatreSystem {
         }
         
         if (seats[row][col]) {
-            System.out.println("Sorry, that seat is reserved.");
+            System.out.println("\nSorry, that seat is reserved.");
             suggestAlternativeSeat(row, col);
         } else {
             seats[row][col] = true;
-            System.out.println("Seat " + rowChar + (col + 1) + " has been reserved successfully!");
+            System.out.println("\nSeat " + rowChar + (col + 1) + " has been reserved successfully!");
         }
     }
     
@@ -106,7 +106,7 @@ public class MovieTheatreSystem {
     // Suggests an available seat close to the requested seat
 
     private static void suggestAlternativeSeat(int row, int col) {
-        System.out.println("Here are some available alternatives:");
+        System.out.println("\nHere are some available alternatives:");
         
         boolean foundAlternative = false;
         int count = 0;
@@ -139,7 +139,7 @@ public class MovieTheatreSystem {
         char rowChar = scanner.next().toUpperCase().charAt(0);
         int row = rowChar - 'A';
         
-        System.out.print("Enter column of seat to cancel (1-8): ");
+        System.out.print("Enter column of seat to cancel (1-9): ");
         int col = scanner.nextInt() - 1;
         
         if (row < 0 || row >= ROWS || col < 0 || col >= COLS) {
