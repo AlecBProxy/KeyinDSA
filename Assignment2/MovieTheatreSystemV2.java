@@ -1,5 +1,9 @@
 package Assignment2;
-// Please note that the alternate seat logic in this program demonstrates a simple "brute-force technique". See MovieTheatreSystemV2 for an alternate approach.
+// Additional version that demonstrates alternate (less brute force) traversal of 2d arrays
+
+// For the new suggestions we show...
+// -All seats in the same row requested
+// -Some seats in the adjacent row than the one suggested
 
 // "Movie Theatre Seat Booking System"
 // Assignment #2
@@ -9,7 +13,7 @@ package Assignment2;
 
 import java.util.Scanner;
 
-public class MovieTheatreSystem {
+public class MovieTheatreSystemV2 {
     
     private static final int ROWS = 6;
     private static final int COLS = 9;
@@ -105,25 +109,31 @@ public class MovieTheatreSystem {
     }
     
     
-    // Suggests an available seat close to the requested seat
+    // Version 2 of 2d array traversal below...
 
+    //  Suggests an available seat by first, looking in the same row, then adjacent ones.
     private static void suggestAlternativeSeat(int row, int col) {
         System.out.println("\nHere are some available alternatives:");
         
         boolean foundAlternative = false;
-        int count = 0;
         
-        // Scan the array to find up to 3 available seats
-        for (int i = 0; i < ROWS; i++) {
-            for (int j = 0; j < COLS; j++) {
-                if (!seats[i][j]) {
-                    System.out.println("- Seat " + (char)('A' + i) + (j + 1));
+        System.out.println("\nAll seats in the same row:");
+        for (int j = 0; j < COLS; j++) {
+            if (!seats[row][j] && j != col) {
+                System.out.println("- Seat " + (char)('A' + row) + (j + 1));
+                foundAlternative = true;
+            }
+        }
+        
+        System.out.println("\nSome seats in adjacent rows:");
+        for (int r = Math.max(0, row - 1); r <= Math.min(ROWS - 1, row + 1); r++) {
+            if (r == row) continue;
+            
+            for (int c = 0; c < COLS; c++) {
+                if (!seats[r][c]) {
+                    System.out.println("- Seat " + (char)('A' + r) + (c + 1));
                     foundAlternative = true;
-                    count++;
-                    
-                    if (count >= 3) {
-                        return;
-                    }
+                    break;
                 }
             }
         }
