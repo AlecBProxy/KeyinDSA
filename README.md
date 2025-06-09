@@ -1,6 +1,6 @@
 # Recent notes
--All functionality for Assignment #3 "Linked List Delete Method" is contained within *SingleLinkedListTest.java* within the "Assignment3" Folder.
--To test the functionality of the delete methods, run SingleLinkedListTest.java and observe the terminal results.
+- All functionality for Assignment #3 "Linked List Delete Method" is contained within *SingleLinkedListTest.java* within the "Assignment3" Folder.
+- To test the functionality of the delete methods, run SingleLinkedListTest.java and observe the terminal results.
 
 # Data Structures and Algorithms
 
