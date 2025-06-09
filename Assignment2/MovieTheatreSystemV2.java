@@ -48,7 +48,6 @@ public class MovieTheatreSystemV2 {
         scanner.close();
     }
     
-    //  Displays the main menu options
 
     private static void showMenu() {
         System.out.println("\n===== Movie Theater Seating System =====");
