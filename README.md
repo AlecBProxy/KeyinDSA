@@ -1,4 +1,19 @@
 # Recent notes
+
+### Using the added CLI for the Undo/Redo program (Assignment #4)
+
+Once running, the program accepts the following commands:
+
+| Command            | Description                                   |
+|--------------------|-----------------------------------------------|
+| `add <text>`       | Adds a new state to the list                  |
+| `undo`             | Goes back to the previous state               |
+| `redo`             | Moves forward to the next state (if possible) |
+| `current`          | Displays the current state                    |
+| `history`          | Prints all states and shows the current one   |
+| `quit`             | Exits the program                             |
+
+
 - All functionality for Assignment #3 "Linked List Delete Method" is contained within *SingleLinkedListTest.java* within the "Assignment3" Folder.
 - To test the functionality of the delete methods, run SingleLinkedListTest.java and observe the terminal results.
 
