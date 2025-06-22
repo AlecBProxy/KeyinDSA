@@ -1,6 +1,9 @@
 package Assignment4;
+// "Undo/Rego Manager"
+// Assignment #4
+// Data Structures and Algorithms
+// Semester #4
 import java.util.Scanner;
-
 
 public class UndoRedoListTest {
 
@@ -90,9 +93,9 @@ public class UndoRedoListTest {
         UndoRedoList<String> editor = new UndoRedoList<>();
 
         String input;
-        System.out.println("Undo/Redo System");
-        System.out.println("Commands: add <text>, undo, redo, current, history, quit");
-        System.out.println("add <text>: Add a state to the linked list.");
+        System.out.println("\nUndo/Redo System");
+        System.out.println("\nCommands: add <text>, undo, redo, current, history, quit");
+        System.out.println("\nadd <text>: Add a state to the linked list.");
         System.out.println("Example: add Location B");
         System.out.println("undo: Revert to the previous state.");
         System.out.println("redo: Move forward to the next state (if available).");
