@@ -93,18 +93,20 @@ public class UndoRedoListTest {
         UndoRedoList<String> editor = new UndoRedoList<>();
 
         String input;
-        System.out.println("\nUndo/Redo System");
+        System.out.println("\n---Undo/Redo System---");
         System.out.println("\nCommands: add <text>, undo, redo, current, history, quit");
-        System.out.println("\nadd <text>: Add a state to the linked list.");
+        System.out.println("-----------------------------------------------------------");
+        System.out.println("add <text>: Add a state to the linked list.");
         System.out.println("Example: add Location B");
         System.out.println("undo: Revert to the previous state.");
         System.out.println("redo: Move forward to the next state (if available).");
         System.out.println("current: shows the current state.");
         System.out.println("history: shows the state history, and the current position.");
+        System.out.println("-----------------------------------------------------------");
 
 
         while (true) {
-            System.out.print("> ");
+            System.out.print("\n> ");
             input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("quit")) {
