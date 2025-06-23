@@ -1,5 +1,5 @@
 package Assignment4;
-// "Undo/Rego Manager"
+// "Undo/Redo Manager"
 // Assignment #4
 // Data Structures and Algorithms
 // Semester #4
