@@ -1,5 +1,20 @@
 # Recent notes
 
+### Using the optional Animal Shelter CLI (Assignment #5)
+
+Once running, the program provides a menu-driven interface for managing the animal shelter:
+| Command                  | Description                                    |
+|--------------------------|------------------------------------------------|
+| `Add animal`             | Adds a new dog or cat to the shelter          |
+| `Adopt animal`           | Adopts a dog, cat, or any available animal    |
+| `Show all animals`       | Displays all animals currently in the shelter |
+| `Peek at next animal`    | Views the next animal without adopting        |
+| `Exit`                   | Exits the program                              |
+
+- The shelter has a maximum capacity of 10 animals and operates under FIFO (First In, First Out) principles.
+- Only dogs and cats are accepted at the shelter.
+- Demo data is automatically loaded when the program starts.
+
 ### Using the added CLI for the Undo/Redo program (Assignment #4)
 
 Once running, the program accepts the following commands:
