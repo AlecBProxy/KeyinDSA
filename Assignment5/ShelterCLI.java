@@ -1,4 +1,8 @@
 package Assignment5;
+// "Animal Shelter Adoption System"
+// Assignment #5
+// Data Structures and Algorithms
+// Semester #4
 
 import java.util.Scanner;
 

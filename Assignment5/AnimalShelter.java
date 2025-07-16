@@ -1,4 +1,8 @@
 package Assignment5;
+// "Animal Shelter Adoption System"
+// Assignment #5
+// Data Structures and Algorithms
+// Semester #4
 
 public class AnimalShelter {
     private Animal[] queue;
