@@ -6,7 +6,7 @@ package Assignment5;
 
 public class Animal {
     String name;
-    String type; // "dog" or "cat"
+    String type;
     int order;
 
     public Animal(String name, String type, int order) {

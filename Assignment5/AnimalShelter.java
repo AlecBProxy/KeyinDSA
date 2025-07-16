@@ -66,12 +66,12 @@ public class AnimalShelter {
             return null;
         }
 
-        // Linear search to find the first of that type
+        // Linear search for finding the first of that type of pet
         int index = front;
         for (int count = 0; count < size; count++) {
             if (queue[index].type.equals(type)) {
                 Animal adopted = queue[index];
-                // Shift all elements after index backward
+                // Shifting every element after index backward
                 for (int i = index; i != rear; i = (i + 1) % capacity) {
                     int next = (i + 1) % capacity;
                     queue[i] = queue[next];
